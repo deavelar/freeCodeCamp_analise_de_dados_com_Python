@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Import data
-df = pd.read_csv("C:/Users/deave/OneDrive/Documentos/Programação/freecodecamp - Análise de Dados/003 - Visualizador de dados médicos/medical_examination.csv", header = 0)
+df = pd.read_csv("medical_examination.csv", header = 0)
 
 # Add 'overweight' column
 imc = round(df['weight'] / (df['height'] / 100) **2, 2)
